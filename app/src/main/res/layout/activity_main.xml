@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context="com.example.fancy.MainActivity">
+
+    <EditText
+        android:id="@+id/et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入文字"
+        android:text="我们很开心是的呢哈哈是的是的是的是的" />
+
+    <!--app:autoSizeTextType="uniform"
+    tools:ignore="MissingPrefix"
+    -->
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:maxLines="1"
+        android:textSize="60sp"
+        app:autoSizeTextType="uniform"
+        tools:ignore="MissingPrefix"
+         />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onBig"
+        android:text="增大" />
+
+</LinearLayout>
